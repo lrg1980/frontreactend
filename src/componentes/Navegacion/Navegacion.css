@@ -14,4 +14,6 @@
 
 .navegacion a.activo {
      color: #ffce00;
+     font-weight: bold;
+     font-size: 1.3rem;
 }

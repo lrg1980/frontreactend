@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import Productos from './Productos';
-import Nosotros from './Nosotros';
-import Navegacion from './Navegación';
-import Error from './Error';
+import Header from './Header/Header';
+import Productos from './Productos/Productos';
+import Nosotros from './Nosotros/Nosotros';
+import Navegacion from './Navegacion/Navegacion';
+import Error from './Error/Error';
 import InfoProductos from '../datos/datos.json';
-import SingleProducto from './SingleProducto';
-import Contacto from './Contacto';
+import SingleProducto from './SingleProducto/SingleProducto';
+import Contacto from './Contacto/Contacto';
 
 class Router extends Component {
 
