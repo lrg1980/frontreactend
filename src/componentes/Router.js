@@ -7,6 +7,7 @@ import Navegacion from './Navegación';
 import Error from './Error';
 import InfoProductos from '../datos/datos.json';
 import SingleProducto from './SingleProducto';
+import Contacto from './Contacto';
 
 class Router extends Component {
 
