@@ -10,7 +10,6 @@ class Buscador extends Component {
 
           // enviamos por props
           this.props.busqueda(termino);
-          
      }
      
      render() { 
