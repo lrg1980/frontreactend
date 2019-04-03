@@ -5,9 +5,9 @@ import Router from './componentes/Router';
 class App extends Component {
   render() {
     return (
-      <div className="contenedor">
-       <Router />
-      </div>
+      <React.Fragment>
+        <Router />
+      </React.Fragment>
     );
   }
 }
