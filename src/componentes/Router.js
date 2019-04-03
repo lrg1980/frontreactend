@@ -9,10 +9,12 @@ import InfoProductos from '../datos/datos.json';
 import SingleProducto from './SingleProducto/SingleProducto';
 import Contacto from './Contacto/Contacto';
 
+
 class Router extends Component {
 
      state = {
-          productos: []
+          productos: [],
+          terminoBusqueda: ''
      }
 
      componentWillMount() {
@@ -20,7 +22,18 @@ class Router extends Component {
                productos: InfoProductos
           })
      }
-     
+
+     busquedaProducto = (busqueda) => {
+          if (busqueda.length > 3) {
+               this.setState({
+                    terminoBusqueda: busqueda
+               })
+          } else {
+               this.setState({
+                    terminoBusqueda: ''
+               })
+          }
+     }
      render() { 
           return ( 
                <BrowserRouter>
@@ -31,6 +44,7 @@ class Router extends Component {
                               <Route exact path="/" render={() => (
                                    <Productos
                                         productos={this.state.productos}
+                                        busquedaProducto={this.busquedaProducto}
                                    />
                               )} />
                               <Route exact path="/nosotros" component={Nosotros} />
